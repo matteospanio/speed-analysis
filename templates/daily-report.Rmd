@@ -1,0 +1,17 @@
+---
+title: "Internet speed Report"
+author: "Matteo Spanio"
+date: "`r Sys.Date()`"
+output: pdf_document
+params:
+  portfolio_name: Speed data
+  show_code: no
+---
+
+# Header
+
+```{r}
+data <- read.csv('../data/speed_data.csv')
+summary(data)
+```
+
